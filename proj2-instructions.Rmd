@@ -61,11 +61,20 @@ In order for your project proposal to be accepted, all of the above must, first 
 
 ### Data Files (Deadline April 22)
 
+1. Set up a new calendar in your application name it `math271`.
+2. Log you data by creating new events in the calendar app and add them to your new `math271` calendar.
+3. When data collection is complete, export the calendar to `.ics` format.
+4. Copy/Upload your `.ics` file to your project directory.
+
+See this video tutorial for a walkthrough of the first three steps: https://youtu.be/vLlR4lBWAoc
+
 Individually, each team member will commit to the repository `main` branch:
 
 - your `.ics` calendar file with the raw data.
 - a short file with a written description of the contents of the data file that could be used by someone else to verify that it was correctly imported. (e.g., number of events, dates of data collection, variables measured, etc.)
 - (optional, A-level work) Your written description will be a `.Rmd` that has code that imports your `.ics` file, and wrangles it into whatever shape you need for your analysis. If you go this route, the Rmd should write out a `.csv` version of your data at the end (`?write_csv`), and you should commit the `.csv` version of the data to the repository as well.
+
+The `ical::ical_parse` function can be used to read the `.ics` file.
 
 Your data files should all have similar names, like `yourname_data.ics`, `yourname_data.Rmd` and `yourname_data.csv`.
 
