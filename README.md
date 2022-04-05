@@ -22,6 +22,7 @@ All deliverables are to be submitted as commits to the `main` branch of your tea
     + Due Apr 12
 2. Individually: Your data file along with a short written description and metadata.
     + Deadline Apr 22
-3. Individually: A report analyzing the data set and discussing what it means about your research question.     + Due Apr 29
+3. Individually: A report analyzing the data set and discussing what it means about your research question.
+    + Due Apr 29
 4. Jointly as a team: The short reflection document.
     + Due May 3
