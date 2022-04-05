@@ -1,0 +1,110 @@
+---
+title: "Project 2: Inference"
+author: "Math 271"
+date: "Spring 2022"
+output: 
+  html_document: default
+
+---
+
+```{r setup, include=FALSE, eval=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
+library(tidyverse)
+library(magrittr)
+library(moderndive)
+```
+
+## Project Outline
+
+In this project you will work with a partner to work through a complete data collection and analysis exercise. Each partner will write an individual report, but you will collaborate to decide on what data to collect, and on collecting the data itself.
+
+
+1. Identify a question about how you and your partner use time that you are comfortable sharing with the class.
+2. Use a calendar app such as Google Calendar, OSX Calendar, or Outlook, to make a log of relevant activities.
+3. Export the calendar to a standard format like `.ics` and exchange your log with your partner.
+4. Import the calendar data into R and wrangle it into shape.
+5. Visualize and analyze the data using an inference technique from the class.
+6. Prepare a short report about your question, data, analysis, and interpretation of the results.
+7. As a team, prepare a short reflection document on the experience of consciously collecting and sharing data about yourself.
+
+## Deliverables
+
+All deliverables are to be submitted as commits to the `main` branch of your team project repository on Github.
+
+1. Jointly as a team: A project proposal. Identify the question,  hypothesis, and the data to be collected.
+2. Individually: Your data file along with a short written description and metadata.
+3. Individually: A report analyzing the data set and discussing what it means about your research question.
+4. Jointly as a team: The short reflection document.
+
+I recommend that each team member create a personal branch and do most of the work and commits in that personal branch. Then when you're ready to finalize the file, merge that file into the `main` branch of the repository.
+
+
+### Project Proposal (Due Apr 12)
+
+Your project proposal document should address the following points:
+
+- The **question would you like to investigate**. The question should involve a comparison of some kind between you and your partner.
+    + For example, you might want to investigate how you spend your study time, and the comparison could be something simple, like comparing you and your partner's time to see who studies for longer on average. Or you could measure how much time you spend reading the book vs solving problems, and comparing to see if you both spend the same fraction of your time on on the two types of study activity.
+    + Think about comparing means or proportions of the amount of time you spend on things.
+- Describe the **data and variables that you will need to collect** to investigate the question. For example you might need only to record the start and stop time of every study session. Or you might need to go into more detail and record the start and end time of each type of study activity. Whatever you decide, it should be something that you can easily record into calendar events, like start/end times, activity name, location, etc.
+- The **statistical method** you will use to analyze the data set and make the formal comparison. If you plan to do a hypothesis test, what will the null hypothesis be?
+- Describe a **protocol for how the data will be recorded**, how long you plan to record the data for, and **how much data you expect to collect**.
+    + For example, you may decide to keep a notepad in your study area, and when you are studying write down the time whenever you switch to a new task. The task categories will be "reading" or "problem solving". At the end of the study session, you will enter events into your calendar corresponding to the time blocks on each activity. The name of the event will be the type of activity. I estimate that if I spend 2 hours a day studying, and record data for one week, that I should end up with at least 7 calendar events for each category of activity, but given what I know about my actual study habits, a more realistic number might be 3 time blocks of each activity per day, which would work out to closer to 20 calendar events in the week. Combining the data from both team members from the whole week could therefore expect something close to 50 calendar events.
+    + Whatever you decide on, you should aim to have an absolute minimum of 5 data points in whatever the smallest comparison group you plan to have in your analysis is.
+    + Your data collection protocol should involve a plan for your team to monitor each others' data logging efforts. For example, you could say that during the data collection period, you will exchange a daily reminder email, along with a brief summary of yesterday's data.
+- A **timeline for the data collection**. Plan when will the data logging take place, and set a deadline for making your data set available to your partner.
+    + Exactly how much time is needed to complete the data logging will depend on your project question. For logging day-to-day activities, try to plan for at least one week of data collection.
+
+In order for your project proposal to be accepted, all of the above must, first and foremost, be feasible and safe. Remember, the goal of this project is to run though a complete data project life cycle from planning stage to report. I don't expect any Nobel Prize winning research here. Don't shoot for the moon, shoot for something doable.
+
+**Submit your proposal as a `proposal.Rmd` document committed to the `main` branch of your team github repository.** It should be as long as needed to address the points described above in enough detail for me to know exactly what you plan to do, and not longer. Only one proposal is to be submitted per team.
+
+### Data Files (Deadline April 22)
+
+Individually, each team member will commit to the repository `main` branch:
+
+- your `.ics` calendar file with the raw data.
+- a short file with a written description of the contents of the data file that could be used by someone else to verify that it was correctly imported. (e.g., number of events, dates of data collection, variables measured, etc.)
+- (optional, A-level work) Your written description will be a `.Rmd` that has code that imports your `.ics` file, and wrangles it into whatever shape you need for your analysis. If you go this route, the Rmd should write out a `.csv` version of your data at the end (`?write_csv`), and you should commit the `.csv` version of the data to the repository as well.
+
+Your data files should all have similar names, like `yourname_data.ics`, `yourname_data.Rmd` and `yourname_data.csv`.
+
+Ideally, you should have your data collection done well in advance of the deadline, the date above is the absolute deadline for getting the data you produced to your partner.
+
+### Data Report (Due April 29)
+
+Individually, a report on the question, data, analysis, and interpretation of the results. Ideally, your report will be based on a merged data set from both team members.
+
+This should have three main sections
+
+- Introduction and methods: Explain your question, hypothesis, and the data collection methods and protocol you used. This section should draw heavily on your project proposal. But don't just copy and paste, spend some time editing and making your report be in your own voice and easy to read.
+
+- Results: Summarize the data that was collected, using text and graphs. Report the results of any statistical analysis you did, e.g., confidence intervals, p-values. This should be the "easiest" section to produce, in terms of deciding what to put here. However, it can end up taking the biggest chunk of time in the end, if you spend a lot of time tweaking the graphs or tables until you're satisfied they're perfect.
+
+- Discussion: Interpret the results of your analysis and the conclusions that you can draw from them about the question you set out to answer.
+
+**The report is to be committed to the `main` branch as a `yourname_report.Rmd` and `.html` files.** The html build of the report should be pleasant to read, meaning that code chunks should be hidden from view, and graphs should be nicely labelled. Run spell check (F7) and proofread for grammar and flow. (A well oiled team will proofread each others' reports before submission.) There are no fixed length requirements for the report, but I would expect something in the neighborhood of 3-4 paragraphs for the intro, 2-3 paragraphs and 1-2 plots/tables for the results, and 2-3 paragraphs for the discussion.
+
+### Reflection Document (Due April 26)
+
+As a team, reflect and discuss on the experience of collecting data on yourself and sharing it with someone else for analysis. 
+
+Here are some ideas to ponder: 
+
+- As a data provider: 
+    + What were your subjective feelings about collecting and sharing data about yourself? 
+    + Were you completely honest when logging your data, or did you feel the need to fudge things to protect yourself? 
+    + How accurate were your data collection efforts? Are you aware of any intentional, systematic, or accidental errors or omissions or deficiencies in your logs?
+- As a data analyst:
+    + What ethical responsibilities do you have when analyzing other people's data?
+    + Did the fact that you know the person who generated the data (and that they will have access to the report) have any effect on your analysis and interpretation?
+    
+There will be a few minutes in class on April 26 to work on this together, but feel free to discuss in advance of this. **Each team will commit one reflection document with your joint response to the `main` branch.** No longer than 500 words (approx one single-spaced page).
+
+## Final thoughts
+
+There are more moving parts in this project, especially with regards to collecting data and sharing it with your team partner. Don't procrastinate. Time management is an important component of this activity.
+
+The most important thing is to get _something finished_. It doesn't need to be super interesting, and the analysis doesn't need to be complicated. "Which one of us sleeps longer on average?" is a perfectly acceptable question. Spend _some_ time and effort on planning, tweaking, and polishing, but try to recognize when you've hit the point of diminishing returns, and get on with it.
+
+https://www.forbes.com/sites/deeppatel/2017/06/16/why-perfection-is-the-enemy-of-done/
