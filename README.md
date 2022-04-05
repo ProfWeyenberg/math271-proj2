@@ -19,6 +19,9 @@ In this project you will work with a partner to work through a complete data col
 All deliverables are to be submitted as commits to the `main` branch of your team project repository on Github.
 
 1. Jointly as a team: A project proposal. Identify the question,  hypothesis, and the data to be collected.
+    + Due Apr 12
 2. Individually: Your data file along with a short written description and metadata.
-3. Individually: A report analyzing the data set and discussing what it means about your research question.
+    + Deadline Apr 22
+3. Individually: A report analyzing the data set and discussing what it means about your research question.     + Due Apr 29
 4. Jointly as a team: The short reflection document.
+    + Due May 3

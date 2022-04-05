@@ -94,7 +94,7 @@ This should have three main sections
 
 **The report is to be committed to the `main` branch as a `yourname_report.Rmd` and `.html` files.** The html build of the report should be pleasant to read, meaning that code chunks should be hidden from view, and graphs should be nicely labelled. Run spell check (F7) and proofread for grammar and flow. (A well oiled team will proofread each others' reports before submission.) There are no fixed length requirements for the report, but I would expect something in the neighborhood of 3-4 paragraphs for the intro, 2-3 paragraphs and 1-2 plots/tables for the results, and 2-3 paragraphs for the discussion.
 
-### Reflection Document (Due April 26)
+### Reflection Document (Due May 3)
 
 As a team, reflect and discuss on the experience of collecting data on yourself and sharing it with someone else for analysis. 
 
