@@ -105,6 +105,8 @@ There will be a few minutes in class on April 26 to work on this together, but f
 
 There are more moving parts in this project, especially with regards to collecting data and sharing it with your team partner. Don't procrastinate. Time management is an important component of this activity.
 
-The most important thing is to get _something finished_. It doesn't need to be super interesting, and the analysis doesn't need to be complicated. "Which one of us sleeps longer on average?" is a perfectly acceptable question. Spend _some_ time and effort on planning, tweaking, and polishing, but try to recognize when you've hit the point of diminishing returns, and get on with it.
+The most important thing is to get _something finished_. It doesn't need to be super interesting, and the analysis doesn't need to be complicated. "Which one of us sleeps longer on average?" is a perfectly acceptable question. "We'll create a confidence interval and test the hypothesis that we sleep the same amount with a p-value from `t.test`" is a great method.
+
+Spend _some_ time and effort on planning, tweaking, and polishing, but try to recognize when you've hit the point of diminishing returns, and get on with it.
 
 https://www.forbes.com/sites/deeppatel/2017/06/16/why-perfection-is-the-enemy-of-done/
